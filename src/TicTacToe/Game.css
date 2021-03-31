@@ -1,0 +1,49 @@
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left; /* wtf? */
+  font-size: 24px;
+  font-weight: bold;
+  width: 34px;
+  height: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.move {
+  width: 120px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.move-active {
+  font-weight: bold;
+}
+
+.move-toggle {
+  margin-left: 10px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
