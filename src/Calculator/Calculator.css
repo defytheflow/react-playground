@@ -1,6 +1,13 @@
 :root {
-  --button-width: 34px;
-  --button-height: 34px;
+  --button-width: 75px;
+  --button-height: 75px;
+}
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .calculator-input {
@@ -9,7 +16,7 @@
   border-bottom: 1px solid black;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  font-size: 24px;
+  font-size: 36px;
   height: var(--button-height);
   width: calc(var(--button-width) * 4);
   display: flex;
@@ -18,7 +25,7 @@
 }
 
 .calculator-value {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .calculator-row:last-of-type .button:first-of-type {
@@ -34,6 +41,7 @@
   color: #fff;
   border: 1px solid black;
   height: var(--button-height);
+  font-size: 36px;
 }
 
 .button:active {

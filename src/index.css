@@ -2,3 +2,21 @@ body {
   font: 14px 'Century Gothic', Futura, sans-serif;
   margin: 20px;
 }
+
+.nav {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+  padding-bottom: 10px;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover {
+  cursor: pointer;
+  color: grey;
+}
