@@ -11,8 +11,8 @@ interface BoardProps {
   winner: BoardRow | null;
 }
 
-function Board(props: BoardProps) {
-  function renderSquare(i: number) {
+const Board: React.FC<BoardProps> = props => {
+  const renderSquare = (i: number) => {
     return (
       <Square
         key={i}
@@ -21,7 +21,7 @@ function Board(props: BoardProps) {
         color={props.winner?.includes(i) ? 'green' : 'black'}
       />
     );
-  }
+  };
 
   return (
     <>
@@ -36,6 +36,6 @@ function Board(props: BoardProps) {
         ))}
     </>
   );
-}
+};
 
 export default Board;

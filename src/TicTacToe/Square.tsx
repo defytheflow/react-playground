@@ -8,7 +8,7 @@ interface SquareProps {
   onClick: () => void;
 }
 
-function Square(props: SquareProps) {
+const Square: React.FC<SquareProps> = props => {
   return (
     <button
       className='square'
@@ -17,6 +17,6 @@ function Square(props: SquareProps) {
       {props.value}
     </button>
   );
-}
+};
 
 export default Square;

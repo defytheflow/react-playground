@@ -120,7 +120,7 @@ interface ButtonProps {
   onClick: () => void;
 }
 
-function Button(props: ButtonProps) {
+const Button: React.FC<ButtonProps> = props => {
   const value = LAYOUT[props.row][props.col];
   const isBlack = props.row == 0 && (props.col == 0 || props.col == 1 || props.col == 2);
   const isOrange = props.col == 3;
@@ -134,4 +134,4 @@ function Button(props: ButtonProps) {
       {value}
     </button>
   );
-}
+};
